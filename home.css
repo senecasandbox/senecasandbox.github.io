@@ -1,0 +1,816 @@
+<style>
+/*SETUP */
+
+		/* GLOBAL RESETS */
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		
+/*TYPOGRAPHY */
+
+		body {
+			font-family: "Open Sans","Arial","Helvetica",sans-serif;
+			font-size: 16px;
+			line-height: 1.42857143;
+			color: #333;
+			text-decoration: none;
+			background-color: whitesmoke;
+		}
+
+
+/* BUTTONS */
+
+		.button {
+			padding: 10px;
+			text-align: center;
+			white-space: nowrap;
+		}
+
+		
+		/* JQuery activated buttons - HOURS & WORKSHOPS */ 	
+		.toggle {
+			min-width: 100px;
+			border: 1px solid #D9D9D6;
+			text-align: center;
+			border-radius: 3px;
+			margin-bottom: 8px;
+			display: inline-block;
+			padding: 8px;
+			cursor: pointer;
+
+		}
+
+		button {
+			background-color: white;
+			border: 1px solid #ccc;
+			}
+			
+
+		.button-active {
+			background-color: #c9c9c9;
+		}
+
+
+
+
+
+/* SENECA COLLEGE HEADER */
+
+.sandbox-header {
+	/* display: grid; */
+	/* grid-gap: 20px; /*Used for Mobile*/
+	/* grid-template-columns: 1fr auto auto; */
+    /* align-items: center; */
+    /* justify-content: space-around; */ */
+    border: none;
+	padding: 5px 5px;
+	margin: 0;
+	
+}
+
+.library-logo {
+	height: 45px;
+}
+
+.college-header {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+background-color: white;
+}
+
+
+.college-content {
+display: grid;
+grid-template-columns: repeat(3, auto);
+place-items: center center;
+
+}
+
+.college-header a {
+color: #4d4d4d; 
+}
+
+.college-header a:hover {
+color: #da291c;
+text-decoration: none;
+}
+
+	/*INFORMATION FOR */
+
+	#showInfo-caret {
+		padding-left: 8px;
+	}
+
+	#showInfo {
+		z-index: 2000;
+		text-align: left;
+		background-color: white;
+		border: none;
+		position: relative;
+		padding: 0 15px;	
+	}
+		
+	#showInfo:hover {
+		color: #da291c;
+	}
+
+	.closed {
+		display: none;
+	}
+			
+	.open {
+		display: block;
+	}
+
+	.rotate {
+		transform: rotate(180deg) translate(-8px);
+			}
+		
+
+	#showInfo #panel {
+		list-style-type: none;
+		position: absolute; 
+		left: 0;
+		padding: 0 15px;
+		background-color: white;
+		min-width: 180px;
+	}
+
+	#panel li {
+		padding: 18px 0;
+		font-size: 1em;
+		border-bottom: 1px solid #c9c9c9;
+	}
+
+	#panel li:last-child {
+		border-bottom: none;
+	}
+
+	/*BUTTON - VISIT US */
+
+	#seneca-visit-us {
+		display: inline-block;
+		border: 1px solid #ccc;
+		color: #444;
+		padding: 5px 30px;
+	}
+
+	#seneca-visit-us:hover {
+		background-color: #308c8c;
+		color: white;
+		}
+
+
+/* LIBRARY HEADER */
+
+.library-header {
+	display: grid;
+	grid-gap: 20px; /*Used for Mobile*/
+	grid-template-columns: 1fr auto;
+	padding: 5px 25px;
+	background-color: #308c8c;
+	color: white;
+	align-items: center; 
+	
+}
+
+.library-header h1 {
+	margin: 0;
+	font-size: 24px;
+
+}
+
+/* ASK US SIDEBAR */
+
+
+#askus {
+z-index: 100;
+position: fixed;
+width:80px;
+height:80px;
+bottom: 60%;
+right: 1px;
+text-align: center;
+box-shadow: 2px 2px 3px #999;
+border: 1px #54585A solid;
+background-color: white;
+}
+
+#anchorbutton a {
+    padding-top: 60px;
+  }
+
+  #anchorbutton a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 5px solid #444;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+
+  #anchorbutton a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 5px solid #444;
+    border-bottom: 5px solid #444;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+
+  .demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #444;
+    font : normal 600 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+
+  .demo a:hover {
+    opacity: .5;
+    color: #444;
+  }
+
+
+/*SEARCH SECTION */ 
+
+.search-background {
+	background: url("https://libapps-ca.s3.amazonaws.com/accounts/8098/images/background.jpg") center no-repeat;
+	background-size: cover;
+	overflow: auto;
+	height: 85vh;
+	display: grid;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	color: white;
+
+}
+.floattext {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+  
+  div.transbox {
+
+	margin-right: 70%;
+	margin-bottom: 10%;
+	position: relative;
+	border: solid rgba(128, 128, 128, 1);
+	border-width: 7px 7px 7px 0px;
+	background-color: #ffffff;
+	opacity: 0.9;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+  }
+
+  
+  div.transbox p {
+	margin: 2%;
+	color: rgba(0, 0, 0, 1);
+	
+  }
+
+  div.minion {
+	font-family: minion-pro, serif;	
+	font-weight: 400;
+	font-style: normal;
+	font-size: 65px;
+  }
+
+  div.floattextbody {
+  font-size: 25px;
+  }
+
+.background-citation {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+	background-color: #444;
+	padding: 5px;
+}
+
+.search-container {
+	padding-top: 40px;
+}
+
+/*PRIMO SEARCH BAR */
+
+
+.search-form { /*Container for search bar */ 
+display: flex;
+width: 90%;
+max-width: 1000px;
+margin: 0 auto;
+height: 58px; /*Explicit height is needed in LibGuides */
+border: 1px solid black;
+}
+
+	/*PRIMO SEARCH BOX */
+	.primosearchbox {
+	padding-left: 1.25em;
+	font-size: 18px;
+	overflow: hidden;
+	flex: 2 0 100px; 
+	border: none;
+	}
+
+	/*PRIMO SEARCH SCOPES DROPDOWN */
+	select {
+	background-color: white;
+	background-image: url('caret-down.svg');
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-position: 175px center;
+	color: #da291c;
+	padding: 5px;
+	border: none;
+	height: 56px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	-moz-appearance: none;
+	-webkit-appearance: none;		
+		}
+
+
+	/*PRIMO SEARCH SUBMIT BUTTON */
+	.primosearchbutton {
+		background-color: white;
+		border: none;
+		height: 56px; /*Explicit height needed in LibGuides*/
+		width: 60px;
+	}
+
+
+	.primosearchbutton:before {
+			font-family: FontAwesome;
+			content: '\f002'; 
+			font-size: 35px;
+	} 
+
+
+	.primosearchbutton:hover {
+		background-color: #da291c;
+		color: white;
+		cursor: pointer;
+	}
+
+	/*LIBRARY SEARCH TIPS BUTTON */
+
+	.search-tips {
+		background-color: white;
+		color: black;
+		width: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid black;
+		}
+		
+	.search-tips:hover, .search-tips:focus {
+		background-color: #da291c;
+		color: white;
+		text-decoration: none;
+		}
+		
+
+/*Start Button Section */
+
+	.start-button-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-items: center;
+	padding-top: 30px;
+	padding-bottom: 0;
+	list-style-type: none;
+	}
+
+	.start-button {
+	margin: 15px;
+	width: 90%;
+	max-width: 175px;
+	background-color: #da291c;
+	color: white;
+	}
+
+	.start-button:hover, .start-button:focus {
+	color: white;
+	}
+
+	/* BACKGROUND IMAGE CITATION */
+
+	.img-citation {
+	background-color: rgba(0,0,0,0.75);
+	color: white;
+	padding: 5px 10px;
+	float: right;
+	}
+
+	.img-citation:hover, .img-citation:focus {
+	color: white;
+	}
+
+
+/* HOURS & EVENTS */
+
+.hours, .workshops {
+background-color: white;
+box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+margin: 25px;
+padding: 5px 15px;
+}
+
+.contactus {
+	box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+	margin: 25px;
+	padding: 5px 15px;
+	}
+
+.hours a, .workshops a {
+color: #444;
+}
+
+.hours h2, .workshops h2 {
+margin: 10px 0 25px;
+}
+
+/*VIEW  ALL HOURS LINK */
+	.s-lc-w-today-view-all { 
+	margin: 25px 0 10px;
+	display: block;
+	background-color: #444;
+	width: 100%;
+	text-align: center;
+	}
+
+	.s-lc-w-today-view-all a {
+	color: white;
+	display: block;
+	}
+
+
+/* LIBCAL HOURS WIDGET */
+
+.s-lc-w-today { border-spacing: 0; border-collapse: collapse; width: 100%; }.s-lc-w-today td, .s-lc-w-today th { padding: 8px 5px; }
+.s-lc-w-sr-only,.s-lc-w-head,.s-lc-w-head-pre,.s-lc-w-lid-6737, .s-lc-w-lid-6735, .s-lc-w-lid-6738, .s-lc-w-lid-6736, .s-lc-w-lid-6758, .s-lc-w-lid-6771 {display: none;} 
+.s-lc-w-times { border-bottom: 1px solid #ddd; }
+.s-lc-w-today-view-all { padding: 8px 5px; }
+
+/*LIBCAL WORKSHOPS WIDGET*/
+
+.s-lc-ea-h3, .s-lc-ea-tdes, .s-lc-ea-l, .s-lc-ea-tpre, .s-lc-ea-tcat, .s-lc-ea-treg, .tcam, #api_upc_cid7588_7369_7385_7477_iid51  {
+display: none;
+}
+
+.s-lc-ea-tb {
+margin: 20px 0;
+}
+
+
+
+/* MAIN CONTAINER */
+
+.main-container {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 15px;
+}
+
+.heading {
+	padding: 0;
+}
+
+.tile-container {
+	padding: 15px 25px;
+	display: grid;
+	grid-gap: 20px;
+	max-width: 1400px;
+	grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.tile {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: minmax(125px, 1fr);
+	box-shadow: 0 0.25rem 0.125rem 0 rgba(0,0,0,0.05);
+	font-weight: bold;
+	position: relative;
+	background-color: white;
+	color: #444;
+	text-align: center;
+
+}
+
+.tile a {
+	text-decoration: none;
+	display: block;
+	color: #444;
+	min-height: 175px;
+}
+
+
+.tile p {
+	background-color: white;
+	margin: 0;
+	padding: 10px;
+	font-size: calc(14px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+p ~ .fa, p ~ .fas {
+	padding: 8px 0 20px;
+	font-size: 9rem;
+
+}
+
+p ~ .fab, p ~ .fas {
+	padding: 8px 0 20px;
+	font-size: 9rem;
+
+}
+
+.icon {
+	width: 11rem;
+	padding: 8px 0 20px;
+}
+
+.flag {
+	margin: 0 auto 25px;
+	border-radius: 25px;
+	width: 110px;
+	background-color: #da291c;
+	color: white;
+}
+
+
+/*FOOTER */
+footer {
+	background-color: #54585A;
+	padding: 20px 0;
+
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+footer li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover, footer a:focus {
+	color: white;
+}
+
+
+
+/* TABLET LAYOUT */ 
+
+@media screen and (max-width: 900px) {
+
+
+footer a {
+
+}
+
+
+.main-container {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.heading {
+text-align: center;
+}
+
+.college-header {
+grid-template-columns: 1fr;
+}
+
+.logo {
+order: 2;
+padding: 10px 0;
+}
+
+.tile-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tile {
+width: 200px;
+}
+
+.college-content {
+order: 1;
+padding: 0;
+justify-items: start;
+white-space: nowrap;
+}
+
+
+div.minion {
+font-size: 36px;
+}
+
+div.floattextbody {
+font-size: 20px;
+}
+
+#anchorbutton {
+	display: none;
+	}
+
+	div.transbox {
+		margin-right: 50%;
+	}
+
+/* REGULAR PHONE LAYOUT */
+
+@media screen and (max-width: 600px) {
+
+.search-background {
+	height: 100%;
+}
+
+.search-container {
+	padding-top: 50px;
+}
+
+#askus {
+ width: 50px;
+ height: 50px;
+ bottom: 5%;
+}
+
+#askus img {
+	width: 90%;
+}
+
+#seneca-visit-us {
+display: none;
+}
+
+.college-header {
+padding: 0 20px;
+}
+
+
+.college-header svg {
+margin: 0;
+width: 170px;
+height: 36.47px;
+}
+
+.library-header {
+display: grid;
+grid-template-columns: 1fr auto;
+justify-content: center;
+}
+
+.library-header h1 {
+font-size: 18px;
+margin: 0 50px;
+}
+
+#button-account {
+grid-column: 1 / -1;
+margin: 0 50px;
+}
+
+.search-form {
+position: relative;
+width: 100%;
+margin-top: 100px;
+}
+
+select {
+position: absolute;
+top: -40px;
+left: -1px;
+height: 40px;
+border: 1px solid black;
+}
+
+.main-container {
+grid-template-columns: 1fr;
+}
+
+
+.tile-container {
+grid-template-columns: 1fr 1fr;
+justify-items: center;
+}
+
+.tile {
+width: 90%;
+max-width: 150px;
+}
+
+.tile p {
+min-height: 65px;
+}
+
+
+.start-button-container {
+display: grid;
+grid-template-columns: 1fr;
+margin-bottom: 15px;
+}
+
+.background-citation {
+font-size: 8px;
+}
+
+footer ul {
+flex-direction: column;
+padding: 10px;
+}
+
+div.transbox {
+	margin-right: 0%;
+	border: solid rgba(128, 128, 128, 1);
+	border-width: 4px 0px 4px 0px;
+}
+div.minion {
+	font-size: 36px;
+	}
+	
+div.floattextbody {
+	font-size: 18px;
+	}
+
+#anchorbutton {
+	display: none;
+	}
+
+/* XS PHONE LAYOUT */
+
+@media screen and (max-width: 375px) {
+
+.tile p {
+font-size: 12px;
+}
+
+.flag {
+font-size: 12px;
+min-width: 75px;
+}
+
+input.primosearchbox {
+font-size: 14px;
+}
+
+.start-button-container {
+font-size: 12px;
+}
+
+.hours, .workshops {
+margin: 0;
+min-width: 100%;
+}
+
+div.minion {
+font-size: 20px;
+}
+	
+div.floattextbody {
+font-size: 10px;
+}
+#anchorbutton {
+display: none;
+}
+}
+</style>
