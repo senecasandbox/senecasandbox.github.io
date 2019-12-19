@@ -1,4 +1,5 @@
-	/*SETUP */
+<style>	
+/*SETUP */
 
 			/* GLOBAL RESETS */
 			* {
@@ -32,6 +33,21 @@ top: -52px;
 #s-lg-guide-header-search {
 display: none;
 }
+
+
+#s-lib-scroll-top {
+    display: none !important;
+    }
+    
+.col-md-12 {
+    padding: 0;
+    margin: 0;
+}
+    
+    #s-lib-footer-public {
+    display: none;
+    }
+    
 
 	/*ASK US SCROLLING */
 
@@ -283,3 +299,4 @@ display: none;
 
 		
 		}
+</style>
