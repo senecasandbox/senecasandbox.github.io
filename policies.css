@@ -257,7 +257,7 @@ footer {
 
 footer ul {
 	display: flex;
-	justify-content: right;
+	justify-content: left;
 	list-style: none;
 }
 
