@@ -1,5 +1,5 @@
 <style>	
-/*SETUP */
+	/*SETUP */
 
 			/* GLOBAL RESETS */
 			* {
@@ -9,46 +9,6 @@
 				margin: 0;
 				padding: 0;
 			}
-/*LIBGUIDES RESETS */
-
-.container { 
-width: 100%;
-}
-
-
-.s-lg-guide-body {
-padding: 0;
-margin: 0;
-}
-
-#s-lg-guide-name, #s-lib-bc-list, #s-lg-tabs-container, #s-lg-guide-tabs-title-bar {
-    display: none;
-}
-
-#s-lg-public-skiplink {
-position: absolute;
-top: -52px;
-}
-
-#s-lg-guide-header-search {
-display: none;
-}
-
-.col-md-12 {
-    padding: 0;
-    margin: 0;
-}
-    
-#s-lib-scroll-top {
-    display: none !important;
-    }
-    
-
-    
-    #s-lib-footer-public {
-    display: none;
-    }
-    
 
 	/*ASK US SCROLLING */
 
@@ -159,6 +119,12 @@ display: none;
 		font-family: minion-pro, serif;
 	}
 
+	h5 {
+		color: #55585a;
+		font-size: 23px;
+	}
+
+
 	p {
 		color: #333;
 		font-size: 16px;
@@ -193,12 +159,14 @@ display: none;
 	/* ICONS */
 
 	.icon {
-		width: 8rem;
+		width: 25rem;
 		padding: 8px 0 20px;
+		width: 100%;
+
 	}
 
 	img.icon {
-		width: 50%;
+		width: 75%;
 		display: block;
 		margin: 25px auto;
 	}
@@ -238,12 +206,6 @@ display: none;
 		font-size: 12rem;
 		width: 100%;
 		align: center;
-	}
-
-	.icon {
-		width: 100%;
-		padding: 8px 0 20px;
-
 	}
 
 	.main {
