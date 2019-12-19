@@ -19,7 +19,7 @@
 	
 	.s-lg-guide-body {
 	padding: 0;
-	margin: 0;
+	margin: 70px;
 	}
 	
 	#s-lg-guide-name, #s-lib-bc-list, #s-lg-tabs-container, #s-lg-guide-tabs-title-bar {
@@ -42,7 +42,7 @@
 		
 	.col-md-12 {
 		padding: 0;
-		margin: 0;
+		margin: 0px;
 	}
 		
 		#s-lib-footer-public {
@@ -185,8 +185,8 @@ h3 {
 .page-container {
     padding: 0 15px;
     max-width: 1200px;
-    margin: 50px auto;
-    background-color: whitesmoke;
+	margin: 50px auto;
+	background-color: whitesmoke;
 }
 
 /* ICONS */
