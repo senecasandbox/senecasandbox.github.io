@@ -71,10 +71,9 @@
     
 /* LIBRARY HEADER */
 .page-header {
-    align-items: center;
-    justify-content: space-around;
-    border: none;
-	padding: 22px 25px;
+        background-color: white;
+        border: none;
+	padding: 5px 5px;
 	margin: 0;
 	
 }
