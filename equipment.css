@@ -298,7 +298,9 @@ display: none;
 		flex-direction: column;
 		padding: 10px;
 		}
-
+	.title h1 {
+		width: 800px;
+		margin: 0 auto;
 		
 		}
 </style>
