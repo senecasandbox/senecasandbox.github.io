@@ -9,7 +9,45 @@
 				margin: 0;
 				padding: 0;
 			}
+/*LIBGUIDES RESETS */
 
+.container { 
+width: 100%;
+}
+
+
+.s-lg-guide-body {
+padding: 0;
+margin: 0;
+}
+
+#s-lg-guide-name, #s-lib-bc-list, #s-lg-tabs-container, #s-lg-guide-tabs-title-bar {
+    display: none;
+}
+
+#s-lg-public-skiplink {
+position: absolute;
+top: -52px;
+}
+
+#s-lg-guide-header-search {
+display: none;
+}
+
+
+#s-lib-scroll-top {
+    display: none !important;
+    }
+    
+.col-md-12 {
+    padding: 0;
+    margin: 0;
+}
+    
+    #s-lib-footer-public {
+    display: none;
+    }
+    
 	/*ASK US SCROLLING */
 
 	#askus {
