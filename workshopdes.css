@@ -136,6 +136,11 @@ h3 {
     font-family: minion-pro, serif;
 }
 
+h4 {
+	font-weight: bold;
+	font-size: x-large;
+}
+
  p {
     color: #333;
     font-size: 16px;
