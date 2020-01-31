@@ -1,0 +1,196 @@
+
+
+.title {
+    background-color: whitesmoke;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    padding-left: 25px;
+}
+
+
+.title h1 {
+	color: #da291c;
+    font-size: 65px;
+    font-family: minion-pro, serif;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	
+}
+
+
+h2, .h2 { 
+    color: #55585a;
+    font-size: 30px; 
+    font-family: minion-pro, serif;
+ }
+
+h3 {
+    color: #55585a;
+    font-size: 25px;
+    font-family: minion-pro, serif;
+}
+
+
+
+
+
+.title h1 {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+      
+            
+    }
+  
+  .admin-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 40px; 
+    margin: 0 auto;
+
+  }
+
+          
+  .staff-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 25px;
+    grid-row-gap: 40px; 
+    margin: 0 auto;
+  }
+
+  
+  .admin, .staff {
+    border: 1px solid #ccc;
+  }
+
+
+
+  h2 {
+      margin: 50px; 
+      text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .top {
+    text-align: center;
+    padding: 15px;
+    
+  }
+
+  /*PHOTO, NAME, & TITLE */
+  
+  .photo {
+    display: block;
+    width: 100px;
+    height: 110px;
+    margin: 0 auto;
+  }
+  
+  .name {
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    height: 60px;
+  }
+  
+  .job-title {
+    font-size: 16px;
+    display: block;
+    height: 30px;
+  }
+
+
+  /*CONTACT DETAILS */
+  
+  .contact {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    
+  }
+  
+  .email, .phone, .campus {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .contact i {
+    padding-left: 5px;
+    padding-right: 10px;
+    width: 35px;
+  }
+
+  /*BUTTONS TO FILTER BY CAMPUS */
+
+  #buttons-container {
+    padding: 15px 0;
+    margin: 25px 0; 
+    margin-top: -20px;
+    text-align: center;
+  }
+        
+  
+  #buttons-container button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    font: inherit;
+    color: white;
+    background-color: #da291c;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 100px;
+  }
+  
+  #buttons-container .button-active {
+    background-color: #ccc;
+    color: black;
+  }
+
+  .hide {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 600px){
+      .admin-container, .staff-container {
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 10px;
+      }
+
+      .photo {
+        width: 80px;
+        height: 90px;
+      }
+
+      .name {
+          font-size: 14px;
+      }
+
+      .job-title {
+          font-size: 12px;
+      }
+
+      .email, .phone, .campus {
+    display: block;
+    padding: 5px 0;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  }
+
