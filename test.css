@@ -183,11 +183,11 @@ h3 {
 /*PAGE CONTAINER */
 
 .page-container {
-    padding: 0 15px;
-    max-width: 1200px;
-	margin: 50px auto;
-	background-color: whitesmoke;
-}
+		padding: 0 15px;
+		max-width: 1200px;
+		margin: 50px auto;
+	}
+
 
 /* ICONS */
 
