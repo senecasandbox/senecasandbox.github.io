@@ -9,17 +9,6 @@
 			padding: 0;
 		}
 
-.page-header {
-		display: grid;
-		grid-gap: 20px; /*Used for Mobile*/
-		grid-template-columns: 1fr auto auto;
-		align-items: center;
-		justify-content: space-around;
-		border: none;
-		padding: 22px 25px;
-		margin: 0;
-}
-
 /*ASK US SCROLLING */
 
 #askus {
