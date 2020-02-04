@@ -1,15 +1,32 @@
-<style>
-/*SETUP */
+<style>	
+	/*SETUP */
 
-		/* GLOBAL RESETS */
-		* {
-			box-sizing: border-box;
+			/* GLOBAL RESETS */
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+	/*ASK US SCROLLING */
+
+	#askus {
+			z-index: 100;
+		position: fixed;
+		width:80px;
+		height:80px;
+		top: 275px;
+		right: 1px;
+		text-align: center;
+		box-shadow: 2px 2px 3px #999;
+			border: 1px black solid;
+			background-color: white;
 		}
-body {
-		margin: 0;
-		padding: 0;
-		}
-.page-header {
+		
+	/* LIBRARY HEADER */
+	.page-header {
 		display: grid;
 		grid-gap: 20px; /*Used for Mobile*/
 		grid-template-columns: 1fr auto auto;
@@ -18,352 +35,344 @@ body {
 		border: none;
 		padding: 22px 25px;
 		margin: 0;
-}
-/*ASK US SCROLLING */
-
-#askus {
-        z-index: 100;
-	position: fixed;
-	width:80px;
-	height:80px;
-	top: 275px;
-	right: 1px;
-	text-align: center;
-	box-shadow: 2px 2px 3px #999;
-		border: 1px black solid;
-		background-color: white;
-    }
-
-    /*TYPOGRAPHY */
-
-body {
-    font-family: "Open Sans","Arial","Helvetica",sans-serif;
-    font-size: 16px;
-    line-height: 1.42857143;
-    color: #333;
-    text-decoration: none;
-}
-
-a {
-	color: #da291c;
-}
-
-
-.title {
-    background-color: whitesmoke;
-    height: 200px;
-    display: grid;
-    align-items: center;
-    padding-left: 25px;
-}
-
-
-.title h1 {
-	color: #da291c;
-    font-size: 65px;
-    font-family: minion-pro, serif;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-
-	
-}
-
-
-h2, .h2 { 
-    color: #55585a;
-    font-size: 30px; 
-    font-family: minion-pro, serif;
- }
-
-h3 {
-    color: #55585a;
-    font-size: 25px;
-    font-family: minion-pro, serif;
-}
-
- p {
-    color: #333;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-}
-
-/*HEADING HIGHLIGHT */
-
-.highlight {
-	border-top: 1px solid #ccc;
-	padding-top: 20px;
-	margin-top: 20px;
-}
-
-.highlight h2 {
-	border-top: 4px solid #da291c;
-	display: inline;
-	padding-top: 16px;
-
-}
- 
-
-/*LINK BAR*/
-
-.link-bar {
-    background-color: #55585A;
-    margin-bottom: 45px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	white-space: nowrap;
-}
-
-.link-bar ul {
-	display: flex;
-	flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 22px 15px;
-	width: 1200px;
-}
-
-.link-bar li {
-	margin-top: 10px;
-}
-
-.link-bar li a {
-	color: white;
-	margin: 30px;
-}
-
-/*PAGE CONTAINER */
-
-.page-container {
-    padding: 0 15px;
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
-/* ICONS */
-
-.icon {
-	width: 8rem;
-	padding: 8px 0 20px;
-}
-
-
-.tile a {
-	text-decoration: none;
-	display: block;
-	color: #444;
-	min-height: 175px;
-}
-
-
-.tile p {
-	background-color: white;
-	margin: 0;
-	padding: 10px;
-	font-size: calc(14px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.tile .fa, .tile .fas {
-	padding: 8px 0 20px;
-	font-size: 6rem;
-}
-
-
-
-/*FOOTER */
-footer {
-	background-color: #54585A;
-	padding: 20px 0;
-
-}
-
-footer ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-}
-
-footer li {
-	display: inline-block;
-	margin: 0 20px;
-}
-
-footer a {
-	color: white;
-}
-
-footer a:hover, footer a:focus {
-	color: white;
-}
-
-/* TABLET LAYOUT */
-
-@media screen and (max-width: 1024px) {
-	#askus {
-		width: 50px;
-		height: 50px;
-	   }
-	   
-	   #askus img {
-		   width: 90%;
-	   }
-
-}
-/* REGULAR PHONE LAYOUT */
-
-@media screen and (max-width: 600px) {
-	
-	.tile-container {
-	grid-template-columns: 1fr 1fr;
-	justify-items: center;
+		
 	}
 
-	footer ul {
-	flex-direction: column;
-	padding: 10px;
+	/*TYPOGRAPHY */
+
+	body {
+		font-family: "Open Sans","Arial","Helvetica",sans-serif;
+		line-height: 1.42857143;
+		color: #333;
+		text-decoration: none;
+	}
+
+	a {
+		color: #da291c;
+	}
+
+
+	.title {
+		background-color: whitesmoke;
+		height: 200px;
+		display: grid;
+		align-items: center;
+		padding-left: 25px;
+	}
+
+	h1 {
+		color: #da291c;
+		font-size: 65px;
+		font-family: minion-pro, serif;
+
 	}
 
 	.title h1 {
-		font-size: 11vw;
+		width: 1200px;
+		margin: 0 auto;
 	}
 
-	 /*PHOTO, NAME, & TITLE */
-  
-     .photo {
-        display: block;
-        width: 100px;
-        height: 110px;
-        margin: 0 auto;
-      }
-      
-      .name {
-        font-size: 18px;
-        display: block;
-        font-weight: bold;
-        padding: 10px;
-        height: 60px;
-      }
-      
-      .job-title {
-        font-size: 16px;
-        display: block;
-        height: 30px;
-      }
-    
-    
-      /*CONTACT DETAILS */
-      
-      .contact {
-        margin-top: 20px;
-        background-color: #f0f0f0;
-        padding: 5px;
-        border-top: 1px solid #ccc;
+
+	h2, .h2 { 
+		color: #55585a;
+		font-size: 30px; 
+		font-family: minion-pro, serif;
+	}
+
+	h3 {
+		color: #55585a;
+		font-size: 25px;
+		font-family: minion-pro, serif;
+	}
+
+	h5 {
+		color: #55585a;
+		font-size: 23px;
+	}
+
+
+	p {
+		color: #333;
+		font-size: 16px;
+		font-family: "Open Sans", sans-serif;
+	}
+	ul {
+		text-align: left;
+	}
+	/*HEADING HIGHLIGHT */
+
+	.highlight {
+		border-top: 1px solid #ccc;
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+
+	.highlight h2 {
+		border-top: 4px solid #da291c;
+		display: inline;
+		padding-top: 16px;
+
+	}
+	
+	/*PAGE CONTAINER */
+
+	.page-container {
+		padding: 0 15px;
+		max-width: 1200px;
+		margin: 50px auto;
+	}
+
+	/* ICONS */
+
+	.icon {
+		width: 25rem;
+		padding: 8px 0 20px;
+		width: 100%;
+
+	}
+
+	img.icon {
+		width: 75%;
+		display: block;
+		margin: 25px auto;
+	}
+
+	.resources {
+		border:1px solid whitesmoke;
+		}
+
+	.resources a {
+		text-decoration: none;
+		display: block;
+		color: #444;
+		min-height: 300px;
+		box-shadow: 2px 2px 3px #999;
+		border: 1px black solid;
+		padding: 4px;
+
+	}
+
+
+	.tile p, {
+		background-color: white;
+		margin: 0;
+		padding: 10px;
+		font-size: calc(14px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+	}
+
+	.tile .fa, .tile .fas {
+		padding: 8px 0 20px;
+		font-size: 12rem;
+		width: 100%;
+		align: center;
+	}
+
+	.resources .fa, .resources .fas {
+		padding: 8px 0 20px;
+		font-size: 12rem;
+		width: 100%;
+		align: center;
+	}
+
+	.main {
+
+		overflow: auto;
+		height: auto;
+		width: 100%;
+		display: grid;
+		align-items: center;
+		position: relative;
+	}
+
+	/*FOOTER */
+	footer {
+		background-color: #54585A;
+		padding: 20px 0;
+
+	}
+
+	footer ul {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+
+	footer li {
+		display: inline-block;
+		margin: 0 20px;
+	}
+
+	footer a {
+		color: white;
+		font-size: 16px;
+	}
+
+	footer a:hover, footer a:focus {
+		color: white;
+	}
+
+
+
+	/* REGULAR PHONE LAYOUT */
+
+	@media screen and (max-width: 600px) {
+		
+		.tile-container {
+		grid-template-columns: 1fr;
+		justify-items: center;
+		}
+
+		footer ul {
+		flex-direction: column;
+		padding: 10px;
+		}
+
+		h1 {
+			color: #da291c;
+			font-size: 45px;
+			font-family: minion-pro, serif;
+	
+		}
+	
+        .staff-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-column-gap: 25px;
+            grid-row-gap: 40px; 
+            margin: 0 auto;
+          }
         
-      }
-      
-      .email, .phone, .campus {
-        display: block;
-        padding: 5px 0;
-        font-size: 14px;
-        white-space: nowrap;
-      }
-      
-      .contact i {
-        padding-left: 5px;
-        padding-right: 10px;
-        width: 35px;
-      }
-    
-      /*BUTTONS TO FILTER BY CAMPUS */
-    
-      #buttons-container {
-        padding: 15px 0;
-        margin: 25px 0; 
-        margin-top: -20px;
-        text-align: center;
-      }
+          
+          .admin, .staff {
+            border: 1px solid #ccc;
+          }
+        
+        
+        
+          h2 {
+              margin: 50px; 
+              text-align: center;
+          }
+          
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          
+          .top {
+            text-align: center;
+            padding: 15px;
             
-      
-      #buttons-container button {
-        padding: 10px;
-        margin: 5px;
-        border: none;
-        font: inherit;
-        color: white;
-        background-color: #da291c;
-        cursor: pointer;
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 16px;
-        min-width: 100px;
-      }
-      
-      #buttons-container .button-active {
-        background-color: #ccc;
-        color: black;
-      }
-    
-      .hide {
-        display: none;
-      }
-    
-    
-      @media screen and (max-width: 600px){
-          .admin-container, .staff-container {
-              grid-template-columns: 1fr 1fr;
-              grid-column-gap: 10px;
           }
-    
+        
+          /*PHOTO, NAME, & TITLE */
+          
           .photo {
-            width: 80px;
-            height: 90px;
+            display: block;
+            width: 100px;
+            height: 110px;
+            margin: 0 auto;
           }
-    
+          
           .name {
-              font-size: 14px;
+            font-size: 18px;
+            display: block;
+            font-weight: bold;
+            padding: 10px;
+            height: 60px;
           }
-    
+          
           .job-title {
-              font-size: 12px;
+            font-size: 16px;
+            display: block;
+            height: 30px;
           }
-    
+        
+        
+          /*CONTACT DETAILS */
+          
+          .contact {
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-top: 1px solid #ccc;
+            
+          }
+          
           .email, .phone, .campus {
-        display: block;
-        padding: 5px 0;
-        font-size: 10px;
-        white-space: nowrap;
-      }
-
+            display: block;
+            padding: 5px 0;
+            font-size: 14px;
+            white-space: nowrap;
+          }
+          
+          .contact i {
+            padding-left: 5px;
+            padding-right: 10px;
+            width: 35px;
+          }
+        
+          /*BUTTONS TO FILTER BY CAMPUS */
+        
+          #buttons-container {
+            padding: 15px 0;
+            margin: 25px 0; 
+            margin-top: -20px;
+            text-align: center;
+          }
                 
-  .staff-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-column-gap: 25px;
-    grid-row-gap: 40px; 
-    margin: 0 auto;
-  }
+          
+          #buttons-container button {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            font: inherit;
+            color: white;
+            background-color: #da291c;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            min-width: 100px;
+          }
+          
+          #buttons-container .button-active {
+            background-color: #ccc;
+            color: black;
+          }
+        
+          .hide {
+            display: none;
+          }
+        
+        
+          @media screen and (max-width: 600px){
+              .admin-container, .staff-container {
+                  grid-template-columns: 1fr 1fr;
+                  grid-column-gap: 10px;
+              }
+        
+              .photo {
+                width: 80px;
+                height: 90px;
+              }
+        
+              .name {
+                  font-size: 14px;
+              }
+        
+              .job-title {
+                  font-size: 12px;
+              }
+        
+              .email, .phone, .campus {
+            display: block;
+            padding: 5px 0;
+            font-size: 10px;
+            white-space: nowrap;
+          }
+          }
+        
 
-  
-  .admin, .staff {
-    border: 1px solid #ccc;
-  }
 
-
-
-  h2 {
-      margin: 50px; 
-      text-align: center;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .top {
-    text-align: center;
-    padding: 15px;
-    
-  }
-</style>
+        </style>
