@@ -320,8 +320,13 @@ display: none;
 			color: #da291c;
 			font-size: 45px;
 			font-family: minion-pro, serif;
-	
 		}
-	
+	          .title {
+    background-color: whitesmoke;
+    height: 200px;
+    display: grid;
+    align-items: left;
+    padding-right: 75%;
+}
 		}
 </style>
