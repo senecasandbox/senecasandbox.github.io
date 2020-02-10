@@ -38,10 +38,15 @@ body {
     font-family: minion-pro, serif;
 	  width: 100%;
 	  max-width: 85%; /*Edit this to change alignment of h1 */
-	  margin: 0 auto;
-
-	
+	  margin: 0 auto;	
 }
+
+h2, .h2 { 
+    color: #55585a;
+    font-size: 30px; 
+    font-family: minion-pro, serif;
+ }
+
   
   .admin-container {
     display: grid;
