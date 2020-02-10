@@ -321,5 +321,9 @@ display: none;
 			font-size: 45px;
 			font-family: minion-pro, serif;
 		}
+		
+		          .title h1 {
+    width: 200px;
+    margin: 0 auto;
 		}
 </style>
