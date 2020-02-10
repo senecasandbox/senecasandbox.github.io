@@ -10,20 +10,21 @@
 				padding: 0;
 			}
 
-	/*ASK US SCROLLING */
+/*ASK US SCROLLING */
 
-	#askus {
-			z-index: 100;
-		position: fixed;
-		width:80px;
-		height:80px;
-		top: 275px;
-		right: 1px;
-		text-align: center;
-		box-shadow: 2px 2px 3px #999;
-			border: 1px black solid;
-			background-color: white;
-		}
+#askus {
+z-index: 100;
+position: fixed;
+width:80px;
+height:80px;
+bottom: 75% !important;
+right: 1px;
+text-align: center;
+box-shadow: 2px 2px 3px #999;
+border: 1px black solid;
+background-color: white;
+    }
+    
 		
 	/* LIBRARY HEADER */
 	.page-header {
