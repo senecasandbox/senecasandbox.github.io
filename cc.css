@@ -57,6 +57,7 @@ h3 {
 
 .link-bar ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0 auto;
     padding: 22px 15px;
