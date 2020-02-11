@@ -391,7 +391,6 @@ footer a:hover, footer a:focus {
 @media screen and (max-width: 600px) {
 	
 	.tile-container {
-	grid-template-columns: 1fr 1fr;
 	justify-items: center;
 	}
 
