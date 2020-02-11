@@ -145,8 +145,9 @@ footer a:hover, footer a:focus {
 	
     .title h1 {
   	width: 200px;
-        margin: 0 auto;
+        margin: 0 0 auto;
 }
+	
     h1 {
         color: #da291c;
         font-size: 45px;
