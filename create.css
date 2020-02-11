@@ -8,7 +8,6 @@
 		body {
 			margin: 0;
 			padding: 0;
-		        background-color: whitesmoke;
 		}
 
 /*LIBGUIDES RESETS */
@@ -20,7 +19,7 @@
 	
 	.s-lg-guide-body {
 	padding: 0;
-	margin: 0;
+	margin: 70px;
 	}
 	
 	#s-lg-guide-name, #s-lib-bc-list, #s-lg-tabs-container, #s-lg-guide-tabs-title-bar {
@@ -49,18 +48,35 @@
 		#s-lib-footer-public {
 		display: none;
 		}
-		
-	#s-lg-content-35051238 {
-                background-color: whitesmoke;
+
+		#s-lg-content-35051238 {
+			background-color: red;
 }
 
+	
+
 /*ASK US SCROLLING */
+
+#askus {
+        z-index: 100;
+	position: fixed;
+	width:80px;
+	height:80px;
+	top: 275px;
+	right: 1px;
+	text-align: center;
+	box-shadow: 2px 2px 3px #999;
+		border: 1px black solid;
+		background-color: white;
+    }
     
 /* LIBRARY HEADER */
 .page-header {
+	
     align-items: center;
     justify-content: space-around;
-    border: none;
+	border: none;
+
 	padding: 22px 25px;
 	margin: 0;
 	
@@ -186,7 +202,7 @@ h3 {
 
 .textdc {
 
-	padding: 8px 0 1px;	
+	padding: 16px 0 1px;	
 }
 
 
@@ -208,7 +224,7 @@ h3 {
 
 .textpa {
 
-	padding: 8px 0 1px;	
+	padding: 28px 0 1px;	
 }
 
 
@@ -230,7 +246,7 @@ h3 {
 
 .textsvp {
 
-	padding: 8px 0 1px;	
+	padding: 35px 0 1px;	
 }
 
 
@@ -357,6 +373,7 @@ footer li {
 
 footer a {
 	color: white;
+	font-size: 16px;
 }
 
 footer a:hover, footer a:focus {
