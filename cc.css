@@ -137,18 +137,18 @@ footer a:hover, footer a:focus {
 	grid-template-columns: 1fr 1fr;
 	justify-items: center;
 	}
-
-	footer ul {
+    
+    footer ul {
 	flex-direction: column;
 	padding: 10px;
 	}
 	
-         .title h1 {
-    width: 200px;
-    margin: 0 auto;
+    .title h1 {
+  	width: 200px;
+        margin: 0 auto;
 }
-	  color: #da291c;
-    font-size: 45px;
-    font-family: minion-pro, serif;
-	
+    h1 {
+        color: #da291c;
+        font-size: 45px;
+        font-family: minion-pro, serif;
 	}
