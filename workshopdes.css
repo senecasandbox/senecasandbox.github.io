@@ -392,6 +392,7 @@ footer a:hover, footer a:focus {
 	
 	.tile-container {
 	justify-items: center;
+	grid-template-columns: 1fr;
 	}
 
 	footer ul {
