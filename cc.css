@@ -143,4 +143,8 @@ footer a:hover, footer a:focus {
 	padding: 10px;
 	}
 	
+         .title h1 {
+    width: 200px;
+    margin: 0 auto;
+}
 	}
