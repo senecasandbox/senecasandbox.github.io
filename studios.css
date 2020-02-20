@@ -99,8 +99,6 @@ background-color: white;
 		color: #da291c;
 		font-size: 65px;
 		font-family: minion-pro, serif;
-		font-weight: bold;
-
 	}
 
 	.title h1 {
@@ -120,6 +118,10 @@ background-color: white;
 		font-size: 25px;
 		font-family: minion-pro, serif;
 	}
+
+	h4 {
+		font-weight: bold;
+	   {
 
 	h5 {
 		color: #55585a;
