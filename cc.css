@@ -68,6 +68,9 @@ h3 {
     color: white;
     margin-right: 30px; 
 }
+.link-bar li {
+margin: 10px;
+}
 
 /*PAGE CONTAINER */
 
@@ -150,6 +153,6 @@ footer a:hover, footer a:focus {
 	
     h1 {
         color: #da291c;
-        font-size: 45px;
+        font-size: 30px;
         font-family: minion-pro, serif;
 	}
