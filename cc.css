@@ -56,7 +56,7 @@ h3 {
 }
 
 .link-bar ul {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0 auto;
