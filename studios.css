@@ -337,4 +337,9 @@ bottom: 1% !important;
   #askus img {
   width: 90%;
   }
+		
+.resources {
+border:1px solid whitesmoke;
+max-width: 320px;		
+  }
 </style>
