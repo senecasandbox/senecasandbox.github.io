@@ -323,13 +323,13 @@ display: none;
 			font-family: minion-pro, serif;
 		}
 		
-		          .title h1 {
+.title h1 {
     width: 300px;
     margin: 0 auto;
 		}
 		
 .resources {
 border:1px solid whitesmoke;
-max-width: 300px;		
+max-width: 290px;		
   }
 </style>
