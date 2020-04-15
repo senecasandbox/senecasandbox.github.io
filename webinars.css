@@ -355,7 +355,6 @@ h4 {
 .tile .fab, .tile .fas {
 	padding: 8px 0 20px;
 	font-size: 10rem;
-	padding-left: 30px;
 }
 
 u:hover {
@@ -397,6 +396,7 @@ footer a:hover, footer a:focus {
 	.tile-container {
 	justify-items: center;
 	grid-template-columns: 1fr;
+	padding-left: 30px;
 	}
 
 	footer ul {
