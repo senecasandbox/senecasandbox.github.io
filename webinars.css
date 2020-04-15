@@ -354,9 +354,6 @@ h4 {
 	font-size: calc(14px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.tile h4 {
-	padding-left: 30px;
-}
 
 .tile .fab, .tile .fas {
 	padding: 8px 0 20px;
