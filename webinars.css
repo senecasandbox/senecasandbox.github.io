@@ -349,7 +349,12 @@ h4 {
 	background-color: white;
 	margin: 0;
 	padding: 10px;
+	padding-left: 30px;
 	font-size: calc(14px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.tile h4 {
+	padding-left: 30px;
 }
 
 .tile .fab, .tile .fas {
@@ -396,7 +401,6 @@ footer a:hover, footer a:focus {
 	.tile-container {
 	justify-items: center;
 	grid-template-columns: 1fr;
-	padding-left: 30px;
 	}
 
 	footer ul {
