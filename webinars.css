@@ -336,12 +336,13 @@ h4 {
 }
 
 
-
+.tile {
+	padding-left: 30px;
+}
 .tile a {
 	text-decoration: none;
 	display: block;
 	color: #444;
-	padding-left: 30px;
 	/* min-height: 175px; */
 }
 
