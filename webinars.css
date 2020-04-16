@@ -339,11 +339,7 @@ h4 {
 .tile {
 	padding-left: 30px;
 }
-.tile a {
-	display: block;
-	color: #444;
-	/* min-height: 175px; */
-}
+
 
 
 .tile p {
