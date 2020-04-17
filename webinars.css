@@ -58,36 +58,6 @@
 	background-color: whitesmoke;
 }
 
-/*ASK US SCROLLING */
-
-#askus {
-        z-index: 100;
-	position: fixed;
-	width:80px;
-	height:80px;
-	top: 275px;
-	right: 1px;
-	text-align: center;
-	box-shadow: 2px 2px 3px #999;
-		border: 1px black solid;
-
-    }
-    
-/* LIBRARY HEADER */
-.page-header {
-    align-items: center;
-    justify-content: space-around;
-    border: none;
-	padding: 22px 25px;
-	margin: 0;
-	
-}
-
-
-.library-logo {
-	height: 45px;
-}
-
 
 
 
