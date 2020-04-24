@@ -1,4 +1,19 @@
 <style>
+#manual-library-alerts {
+background-color: #D9D9D6;
+padding: 25px;
+font-size: 16px;
+font-family: "Open Sans","Arial","Helvetica",sans-serif
+}
+
+
+#manual-library-alerts a {
+color: #da291c;
+}
+
+#manual-library-alerts a:hover {
+text-decoration: underline;
+
 /*SETUP */
 
 		/* GLOBAL RESETS */
