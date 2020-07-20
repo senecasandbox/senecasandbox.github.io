@@ -316,8 +316,15 @@ h4 {
 	padding: 8px 0 1px;	
 }
 
+.iconvir {
+	width: 15rem;
+	padding: 8px 0 1px;
+}
 
+.textvir {
 
+	padding: 8px 0 1px;	
+}
 
 .tile a {
 	text-decoration: none;
