@@ -184,10 +184,14 @@ background-color: white;
 		color: #ca2022;
 		/* box-shadow: 2px 2px 3px #999;
 		border: 1px black solid; */
-		padding: 44px;
+		padding: 4px;
 
 	}
-
+	
+	.resources p {
+		padding: 4px;
+}
+	
 	.resources1 a {
 		text-decoration: none;
 		display: block;
