@@ -187,6 +187,9 @@ background-color: white;
 		padding: 4px;
 
 	}
+	.resource p {
+		padding: 4px;
+}
 
 	.resources1 a {
 		text-decoration: none;
