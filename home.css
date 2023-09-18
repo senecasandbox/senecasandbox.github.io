@@ -610,6 +610,10 @@ p ~ .fab, p ~ .fas {
 	padding: 8px 0 20px;
 }
 
+.icondropin {
+	height: 11rem;
+	padding: 8px 0 20px;
+}
 .flag {
 	margin: 0 auto 25px;
 	border-radius: 25px;
