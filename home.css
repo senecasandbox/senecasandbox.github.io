@@ -114,11 +114,6 @@ place-items: center center;
 
 }
 
-.college-header a:hover {
-color: #da291c;
-text-decoration: none;
-}
-
 #manual-library-alerts {
 background-color: #D9D9D6;
 padding: 25px;
